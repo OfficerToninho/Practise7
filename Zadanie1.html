@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    img {width:500; height:500}
+    h4 {text-align:center}
+    th {width:500; height:500}
+    table {margin:auto;}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+<script>
+
+
+function doEvent(type)
+{
+a = document.getElementById('pic')
+if(type == 0)
+{a.style.display='block'}
+else
+{a.style.display='none'}
+}
+
+
+</script>
+</head>
+<body>
+<h4>Задание №1</h4>
+<table border="1" >
+<tr>
+<th><img src="dog.jpg" id="pic"></th>
+<th><input type="button" value="Спрятать" onMouseOver="doEvent(1);" onMouseOut="doEvent(0)"></th>
+</tr>
+</table>
+</body>
+</html>

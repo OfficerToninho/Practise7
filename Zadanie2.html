@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    img {width:500; height:500}
+    h4{text-align:center}
+    th {width:500; height:500}
+    table{margin:auto}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+<script>
+
+
+function doEvent(type)
+{
+a = document.getElementById('pic')
+b = document.getElementById('hor')
+c = document.getElementById('vom')
+if(type == 0)
+{a.style.display='block'
+b.style.display='none'
+c.style.display='none'}
+else if(type == 1)
+{a.style.display='none'
+b.style.display='block'
+c.style.display='none'}
+else if(type == 2)
+{a.style.display='none'
+b.style.display='none'
+c.style.display='block'}
+}
+</script>
+
+</head>
+
+<body>
+
+<h4>Задание №2</h4>
+<table>
+<th><img src="dog.jpg" id="pic"></th>
+</table>
+<input type="button" value="Собака" onClick="doEvent(0)">
+<input type="button" value="Лошадь" onClick="doEvent(1)">
+<input type="button" value="Вомбат" onClick="doEvent(2)">
+
+</body>
+</html>
